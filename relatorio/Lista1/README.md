@@ -1,8 +1,10 @@
 # Documentação da aula de laboratório
 
-Para cada aula de laboratório, salvar print da execução de cada atividade com o resultado da execução do programa.
+Segue abaixo o relatório descrevendo o cada exercicio da lista 01:
 
 Relatório exercício 01 - 
+
+
 
 Relatório exercício 02 - 
 
