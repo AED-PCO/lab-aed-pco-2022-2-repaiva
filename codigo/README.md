@@ -6,4 +6,4 @@ Se necessário, descreva neste arquivo aspectos relevantes da estrutura de diret
 
 #FLUXO DE ARQUIVOS
 
-![] (/img/Untitled)
+![] (C:\Users\roberto.paiva\github-classroom\AED-PCO\lab-aed-pco-2022-2-repaiva\codigo\img\Untitled.png)
