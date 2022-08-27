@@ -6,4 +6,4 @@ Se necessário, descreva neste arquivo aspectos relevantes da estrutura de diret
 
 #FLUXO DE ARQUIVOS
 
-![Fluxo de Arquivos] (/img/Untitled (1.png))
+![] (/img/Untitled)
