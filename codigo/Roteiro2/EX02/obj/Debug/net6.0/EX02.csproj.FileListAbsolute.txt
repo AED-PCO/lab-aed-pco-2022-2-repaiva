@@ -1,0 +1,15 @@
+C:\Users\roberto.paiva\Desktop\FACULDADE\Algoritmos e Estruturas de Dados\Roteiro2\EX02\bin\Debug\net6.0\EX02.exe
+C:\Users\roberto.paiva\Desktop\FACULDADE\Algoritmos e Estruturas de Dados\Roteiro2\EX02\bin\Debug\net6.0\EX02.deps.json
+C:\Users\roberto.paiva\Desktop\FACULDADE\Algoritmos e Estruturas de Dados\Roteiro2\EX02\bin\Debug\net6.0\EX02.runtimeconfig.json
+C:\Users\roberto.paiva\Desktop\FACULDADE\Algoritmos e Estruturas de Dados\Roteiro2\EX02\bin\Debug\net6.0\EX02.dll
+C:\Users\roberto.paiva\Desktop\FACULDADE\Algoritmos e Estruturas de Dados\Roteiro2\EX02\bin\Debug\net6.0\EX02.pdb
+C:\Users\roberto.paiva\Desktop\FACULDADE\Algoritmos e Estruturas de Dados\Roteiro2\EX02\obj\Debug\net6.0\EX02.csproj.AssemblyReference.cache
+C:\Users\roberto.paiva\Desktop\FACULDADE\Algoritmos e Estruturas de Dados\Roteiro2\EX02\obj\Debug\net6.0\EX02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\roberto.paiva\Desktop\FACULDADE\Algoritmos e Estruturas de Dados\Roteiro2\EX02\obj\Debug\net6.0\EX02.AssemblyInfoInputs.cache
+C:\Users\roberto.paiva\Desktop\FACULDADE\Algoritmos e Estruturas de Dados\Roteiro2\EX02\obj\Debug\net6.0\EX02.AssemblyInfo.cs
+C:\Users\roberto.paiva\Desktop\FACULDADE\Algoritmos e Estruturas de Dados\Roteiro2\EX02\obj\Debug\net6.0\EX02.csproj.CoreCompileInputs.cache
+C:\Users\roberto.paiva\Desktop\FACULDADE\Algoritmos e Estruturas de Dados\Roteiro2\EX02\obj\Debug\net6.0\EX02.dll
+C:\Users\roberto.paiva\Desktop\FACULDADE\Algoritmos e Estruturas de Dados\Roteiro2\EX02\obj\Debug\net6.0\refint\EX02.dll
+C:\Users\roberto.paiva\Desktop\FACULDADE\Algoritmos e Estruturas de Dados\Roteiro2\EX02\obj\Debug\net6.0\EX02.pdb
+C:\Users\roberto.paiva\Desktop\FACULDADE\Algoritmos e Estruturas de Dados\Roteiro2\EX02\obj\Debug\net6.0\EX02.genruntimeconfig.cache
+C:\Users\roberto.paiva\Desktop\FACULDADE\Algoritmos e Estruturas de Dados\Roteiro2\EX02\obj\Debug\net6.0\ref\EX02.dll
