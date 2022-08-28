@@ -1,9 +1,11 @@
 # Código da Prática 
 
-Mantenha neste diretório todo o código fonte do projeto. 
+Se encontra neste diretório todo o código fonte do projeto. 
 
-Se necessário, descreva neste arquivo aspectos relevantes da estrutura de diretórios criada para organização do código.
+Para executar os arquivos basta abrir um terminal integrado a pasta correspondeste do exercicio que deseja e rodar o comando "dotnet run".
 
 # Fluxo de Arquivos
+
+Os arquivos estão dispostos nas pastas conforme imagem abaixo:
 
 <img src="\github-classroom\AED-PCO\lab-aed-pco-2022-2-repaiva\codigo\img\Untitled.png">
