@@ -10,7 +10,7 @@ Escreva um método recursivo que retorne o fatorial de um número.
 
 Resposta:
 
-![Print EX03](imgs/)
+![Print EX03](img/Ex01.jpeg)
 
 # Relatório exercício 02 - 
 
@@ -20,7 +20,7 @@ Uma multiplicação pode ser vista como uma sequência de somas. Escreva um mét
 
 Resposta:
 
-![Print EX03](imgs/)
+![Print EX03](img/Ex02.jpeg)
 
 # Relatório exercício 03 - 
 
@@ -30,7 +30,7 @@ Escreva um método recursivo que realize a potenciação entre dois números int
 
 Resposta:
 
-![Print EX03](imgs/)
+![Print EX03](img/Ex03.jpeg)
 
 # Relatório exercício 04 - 
 
@@ -40,7 +40,7 @@ Escreva um método recursivo que receba uma frase e uma letra como parâmetros. 
 
 Resposta:
 
-![Print EX03](imgs/)
+![Print EX03](img/)
 
 # Relatório exercício 05 - 
 
@@ -50,7 +50,10 @@ Escreva um método recursivo que calcule a soma dos elementos de valor par de um
 
 Resposta:
 
-![Print EX03](imgs/)
+Vetor de referência:
+int []A = new int []{5, 2, 3, 8, 7, 20, 15, 2, 1};
+
+![Print EX03](img/Ex05.jpeg)
 
 # Relatório exercício 06 - 
 
@@ -60,5 +63,5 @@ Escreva um método recursivo que receba uma frase e retorne a mesma frase, sem n
 
 Resposta:
 
-![Print EX03](imgs/)
+![Print EX03](img/)
 
