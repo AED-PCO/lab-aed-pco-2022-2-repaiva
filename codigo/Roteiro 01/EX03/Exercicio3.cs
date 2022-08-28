@@ -3,10 +3,11 @@ float []b = new float[5]{8, 9, 10, 12, 14};
 float []c = new float[5];
 float []d = new float[5];
 levetor(a, b);
-
+Console.WriteLine("Vetor resultante C");
 for(int i =0; i<a.Length; i++)
-    Console.Write(c[i]+"\t");
+Console.Write(c[i]+"\t");
 Console.WriteLine();
+Console.WriteLine("Vetor resultante D");
 for(int i =0; i<a.Length; i++)
     Console.Write(d[i]+"\t");
 

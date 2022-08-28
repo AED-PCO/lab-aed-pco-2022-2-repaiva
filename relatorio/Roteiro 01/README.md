@@ -27,7 +27,7 @@ Faça um programa que mostre se um determinado número inteiro, lido pelo teclad
 Um Número é dito Perfeito se a soma de seus divisores menores que ele é igual a ele. Por exemplo, o número 6 possui os  divisores 1, 2 e 3, cuja soma é igual a 6.
 Faça um programa que liste os números perfeitos de 1 a 1000.
 
-![Print EX02 part2](imgs/)
+![Print EX02 part2](imgs/Ex02part2.jpeg)
 
 # Relatório exercício 03 - 
 
@@ -36,20 +36,25 @@ Considere que nenhum dos vetores possui elementos repetidos.
 Crie um vetor resultante C que possua os elementos comuns entre A e B.
 Crie um vetor resultante D que contenha os elementos de A que não existam em B.
 
-![Print EX04](imgs/)
+Itens dos vetores:
+
+float []a = new float[5]{10, 11, 12, 13, 14};
+float []b = new float[5]{8, 9, 10, 12, 14};
+
+![Print EX03](imgs/Ex03.jpeg)
 
 # Relatório exercício 04 - 
 
 Faça um programa que receba os elementos de uma matriz de 5 linhas por 3 colunas. 
 Mostre a soma dos elementos de cada uma das linhas e das colunas da matriz.
 
-![Print EX05](imgs/)
+![Print EX04](imgs/EX04.jpeg)
 
 # Relatório exercício 05 - 
 
 Faça um programa que chame uma função capaz de calcular o Fatorial de um número inteiro.
 
-![Print EX06](imgs/)
+![Print EX05](imgs/)
 
 # Relatório exercício 06 - 
 
