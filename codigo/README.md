@@ -8,4 +8,4 @@ Para executar os arquivos basta abrir um terminal integrado a pasta correspondes
 
 Os arquivos estão dispostos nas pastas conforme imagem abaixo:
 
-<img src="\github-classroom\AED-PCO\lab-aed-pco-2022-2-repaiva\codigo\img\Untitled.png">
+![Fluxo de Arquivos](img/Fluxo.png)
