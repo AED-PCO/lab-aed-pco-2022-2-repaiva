@@ -17,8 +17,6 @@ Faça um programa que mostre os números de 1000 a 9999 que possuem essa caracte
 
 Resposta:
 
-Resposta:
-
 ![Print EX01](imgs/Ex01.jpeg)
 
 # Relatório exercício 02 - 
@@ -52,12 +50,12 @@ Considere que nenhum dos vetores possui elementos repetidos.
 Crie um vetor resultante C que possua os elementos comuns entre A e B.
 Crie um vetor resultante D que contenha os elementos de A que não existam em B.
 
+Resposta:
+
 Itens dos vetores:
 
-float []a = new float[5]{10, 11, 12, 13, 14};
-float []b = new float[5]{8, 9, 10, 12, 14};
-
-Resposta:
+float []a = new float[5]{10, 11, 12, 13, 14}
+float []b = new float[5]{8, 9, 10, 12, 14}
 
 ![Print EX03](imgs/Ex03.jpeg)
 
@@ -91,4 +89,4 @@ Utilize passagem por parâmetros por referência.
 
 Resposta:
 
-![Print EX06](img/Ex06.jpeg)
+![Print EX05](imgs/Ex06.jpeg)
