@@ -40,7 +40,7 @@ Escreva um método recursivo que receba uma frase e uma letra como parâmetros. 
 
 Resposta:
 
-![Print EX03](img/)
+![Print EX03](img/Ex04.jpeg)
 
 # Relatório exercício 05 - 
 
@@ -63,5 +63,5 @@ Escreva um método recursivo que receba uma frase e retorne a mesma frase, sem n
 
 Resposta:
 
-![Print EX03](img/)
+![Print EX03](img/Ex06.jpeg)
 

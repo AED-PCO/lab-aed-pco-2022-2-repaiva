@@ -8,7 +8,7 @@ Console.WriteLine("O caracter {0} foi encontrado {1} vezes na frase", caracter, 
 int ContLetra(string texto, char letra){
     if(texto=="")
         return 0;
-    if(texto.Length-1==letra)
-        return (ContLetra(frase.Substring(-1), caracter)+1);
-    return (ContLetra(frase.Substring(-1), caracter));
+    if(texto[texto.Length-1]==letra)
+        return (ContLetra(frase.Substring(0, texto.Length-1), caracter)+1);
+    return (ContLetra(frase.Substring(0, texto.Length-1), caracter));
 }

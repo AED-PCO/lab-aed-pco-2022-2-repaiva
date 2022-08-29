@@ -13,3 +13,18 @@ C:\Users\roberto.paiva\Desktop\FACULDADE\Algoritmos e Estruturas de Dados\Roteir
 C:\Users\roberto.paiva\Desktop\FACULDADE\Algoritmos e Estruturas de Dados\Roteiro2\EX04\obj\Debug\net6.0\EX04.pdb
 C:\Users\roberto.paiva\Desktop\FACULDADE\Algoritmos e Estruturas de Dados\Roteiro2\EX04\obj\Debug\net6.0\EX04.genruntimeconfig.cache
 C:\Users\roberto.paiva\Desktop\FACULDADE\Algoritmos e Estruturas de Dados\Roteiro2\EX04\obj\Debug\net6.0\ref\EX04.dll
+C:\Users\roberto.paiva\github-classroom\AED-PCO\lab-aed-pco-2022-2-repaiva\codigo\Roteiro 02\EX04\bin\Debug\net6.0\EX04.exe
+C:\Users\roberto.paiva\github-classroom\AED-PCO\lab-aed-pco-2022-2-repaiva\codigo\Roteiro 02\EX04\bin\Debug\net6.0\EX04.deps.json
+C:\Users\roberto.paiva\github-classroom\AED-PCO\lab-aed-pco-2022-2-repaiva\codigo\Roteiro 02\EX04\bin\Debug\net6.0\EX04.runtimeconfig.json
+C:\Users\roberto.paiva\github-classroom\AED-PCO\lab-aed-pco-2022-2-repaiva\codigo\Roteiro 02\EX04\bin\Debug\net6.0\EX04.dll
+C:\Users\roberto.paiva\github-classroom\AED-PCO\lab-aed-pco-2022-2-repaiva\codigo\Roteiro 02\EX04\bin\Debug\net6.0\EX04.pdb
+C:\Users\roberto.paiva\github-classroom\AED-PCO\lab-aed-pco-2022-2-repaiva\codigo\Roteiro 02\EX04\obj\Debug\net6.0\EX04.csproj.AssemblyReference.cache
+C:\Users\roberto.paiva\github-classroom\AED-PCO\lab-aed-pco-2022-2-repaiva\codigo\Roteiro 02\EX04\obj\Debug\net6.0\EX04.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\roberto.paiva\github-classroom\AED-PCO\lab-aed-pco-2022-2-repaiva\codigo\Roteiro 02\EX04\obj\Debug\net6.0\EX04.AssemblyInfoInputs.cache
+C:\Users\roberto.paiva\github-classroom\AED-PCO\lab-aed-pco-2022-2-repaiva\codigo\Roteiro 02\EX04\obj\Debug\net6.0\EX04.AssemblyInfo.cs
+C:\Users\roberto.paiva\github-classroom\AED-PCO\lab-aed-pco-2022-2-repaiva\codigo\Roteiro 02\EX04\obj\Debug\net6.0\EX04.csproj.CoreCompileInputs.cache
+C:\Users\roberto.paiva\github-classroom\AED-PCO\lab-aed-pco-2022-2-repaiva\codigo\Roteiro 02\EX04\obj\Debug\net6.0\EX04.dll
+C:\Users\roberto.paiva\github-classroom\AED-PCO\lab-aed-pco-2022-2-repaiva\codigo\Roteiro 02\EX04\obj\Debug\net6.0\refint\EX04.dll
+C:\Users\roberto.paiva\github-classroom\AED-PCO\lab-aed-pco-2022-2-repaiva\codigo\Roteiro 02\EX04\obj\Debug\net6.0\EX04.pdb
+C:\Users\roberto.paiva\github-classroom\AED-PCO\lab-aed-pco-2022-2-repaiva\codigo\Roteiro 02\EX04\obj\Debug\net6.0\EX04.genruntimeconfig.cache
+C:\Users\roberto.paiva\github-classroom\AED-PCO\lab-aed-pco-2022-2-repaiva\codigo\Roteiro 02\EX04\obj\Debug\net6.0\ref\EX04.dll
