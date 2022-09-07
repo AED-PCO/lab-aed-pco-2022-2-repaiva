@@ -1,0 +1,15 @@
+C:\Users\roberto.paiva\github-classroom\AED-PCO\lab-aed-pco-2022-2-repaiva\codigo\Roteiro 02\EX06\bin\Debug\net6.0\EX06.exe
+C:\Users\roberto.paiva\github-classroom\AED-PCO\lab-aed-pco-2022-2-repaiva\codigo\Roteiro 02\EX06\bin\Debug\net6.0\EX06.deps.json
+C:\Users\roberto.paiva\github-classroom\AED-PCO\lab-aed-pco-2022-2-repaiva\codigo\Roteiro 02\EX06\bin\Debug\net6.0\EX06.runtimeconfig.json
+C:\Users\roberto.paiva\github-classroom\AED-PCO\lab-aed-pco-2022-2-repaiva\codigo\Roteiro 02\EX06\bin\Debug\net6.0\EX06.dll
+C:\Users\roberto.paiva\github-classroom\AED-PCO\lab-aed-pco-2022-2-repaiva\codigo\Roteiro 02\EX06\bin\Debug\net6.0\EX06.pdb
+C:\Users\roberto.paiva\github-classroom\AED-PCO\lab-aed-pco-2022-2-repaiva\codigo\Roteiro 02\EX06\obj\Debug\net6.0\EX06.csproj.AssemblyReference.cache
+C:\Users\roberto.paiva\github-classroom\AED-PCO\lab-aed-pco-2022-2-repaiva\codigo\Roteiro 02\EX06\obj\Debug\net6.0\EX06.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\roberto.paiva\github-classroom\AED-PCO\lab-aed-pco-2022-2-repaiva\codigo\Roteiro 02\EX06\obj\Debug\net6.0\EX06.AssemblyInfoInputs.cache
+C:\Users\roberto.paiva\github-classroom\AED-PCO\lab-aed-pco-2022-2-repaiva\codigo\Roteiro 02\EX06\obj\Debug\net6.0\EX06.AssemblyInfo.cs
+C:\Users\roberto.paiva\github-classroom\AED-PCO\lab-aed-pco-2022-2-repaiva\codigo\Roteiro 02\EX06\obj\Debug\net6.0\EX06.csproj.CoreCompileInputs.cache
+C:\Users\roberto.paiva\github-classroom\AED-PCO\lab-aed-pco-2022-2-repaiva\codigo\Roteiro 02\EX06\obj\Debug\net6.0\EX06.dll
+C:\Users\roberto.paiva\github-classroom\AED-PCO\lab-aed-pco-2022-2-repaiva\codigo\Roteiro 02\EX06\obj\Debug\net6.0\refint\EX06.dll
+C:\Users\roberto.paiva\github-classroom\AED-PCO\lab-aed-pco-2022-2-repaiva\codigo\Roteiro 02\EX06\obj\Debug\net6.0\EX06.pdb
+C:\Users\roberto.paiva\github-classroom\AED-PCO\lab-aed-pco-2022-2-repaiva\codigo\Roteiro 02\EX06\obj\Debug\net6.0\EX06.genruntimeconfig.cache
+C:\Users\roberto.paiva\github-classroom\AED-PCO\lab-aed-pco-2022-2-repaiva\codigo\Roteiro 02\EX06\obj\Debug\net6.0\ref\EX06.dll
