@@ -74,7 +74,7 @@ Escreva um método recursivo que receba uma frase e retorne a mesma frase, sem n
 
 ### Resposta:
 
+A condição de parada do empilhamento é "if (texto == "")" pois é como testamos se a string chegou ao final. Após isso testamos se o caracter daquela posição da string no momento do teste é uma vogal, caso sim, pulamos para o próximo caracter. Caso o caracter da posição no momento do teste não for uma vogal, reescrevemos o carcter e pulamos para o próximo.
 
-
-![Print EX03](img/Ex06.jpeg)
+![Print EX03](img/Ex06.jpg)
 
