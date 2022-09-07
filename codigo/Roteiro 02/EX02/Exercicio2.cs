@@ -11,7 +11,7 @@ int multiplica (int A, int B){
         return 0;
     if(B>0)
         return (A+(multiplica(A, B-1)));
-    if(B<0 && A<0m && aux==0){
+    if(B<0 && A<0 && aux==0){
         aux++;
         return (A+(multiplica(A, B+1)))*-1;
         }
