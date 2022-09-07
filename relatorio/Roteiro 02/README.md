@@ -4,11 +4,11 @@ Para cada aula de laboratório, salvar print da execução de cada atividade com
 
 # Relatório exercício 01 - 
 
-Pergunta:
+### Pergunta:
 
 Escreva um método recursivo que retorne o fatorial de um número.
 
-Resposta:
+### Resposta:
 
 Nosso escopo só vai até fatorial de zero ou números positivos (maiores ou igual a zero), logo, a fatorial de zero é 1 e por isso fiz dessa a condição de parada. A cada vez que chamamos a função recursiva multiplicamos o número vezes ele mesmo -1, assim empilhando através da recursividade a lógica de fatorial.
 
@@ -16,11 +16,11 @@ Nosso escopo só vai até fatorial de zero ou números positivos (maiores ou igu
 
 # Relatório exercício 02 - 
 
-Pergunta:
+### Pergunta:
 
 Uma multiplicação pode ser vista como uma sequência de somas. Escreva um método recursivo que realize a multiplicação de dois números inteiros, A e B, recebidos por parâmetro.
 
-Resposta:
+### Resposta:
 
 Nossa condição de parada nesse caso é quando a variável B é igual zero, pois todo número somado a zero é ele mesmo. Após isso tivemos que separar em 3 tipos de empilhamentos para realizar as somas sucessivas. Separamos em quando não há números negativos, quando há somente um números negativos e quando ambos os números são negativos. Também foi necessário criar uma variável auxiliar para permitir que a multiplicação por -1 ocorra uma única vez em caso que ambos os números sejão negativos.
 
@@ -28,11 +28,11 @@ Nossa condição de parada nesse caso é quando a variável B é igual zero, poi
 
 # Relatório exercício 03 - 
 
-Pergunta:
+### Pergunta:
 
 Escreva um método recursivo que realize a potenciação entre dois números inteiros, A e B, recebidos por parâmetro. Seu método deve, portanto, retornar o resultado de A elevado a B
 
-Resposta:
+### Resposta:
 
 A condição de parada nesse caso é quando o expoente alcança zero, pois todo número elevado a zero é 1. Tendo isso em vista basta realizar o empilhamento através da recursividade multiplicando a base pelo retorno da condição de parada. 
 
@@ -40,11 +40,11 @@ A condição de parada nesse caso é quando o expoente alcança zero, pois todo 
 
 # Relatório exercício 04 - 
 
-Pergunta:
+### Pergunta:
 
 Escreva um método recursivo que receba uma frase e uma letra como parâmetros. Este método deve retornar a quantidade de ocorrências desta letra nesta frase.
 
-Resposta:
+### Resposta:
 
 A condição de parada do empilhamento é "if(texto=="")" pois é como testamos se a string chegou ao final. Após isso foi necessário fazer outro teste para descobrirmos se houve ou não a ocorrência do caracter desejado na frase, em caso de ocorrência vamos para próxima letra da strig e somamos +1, caso de não ocorrência simplesmente vamos para próxima letra. 
 
@@ -56,7 +56,7 @@ A condição de parada do empilhamento é "if(texto=="")" pois é como testamos 
 
 Escreva um método recursivo que calcule a soma dos elementos de valor par de um vetor de números inteiros positivos.
 
-Resposta:
+### Resposta:
 
 Criei o seguinte vetor de referência para a execução do programa:
 int []A = new int []{5, 2, 3, 8, 7, 20, 15, 2, 1}
@@ -68,11 +68,11 @@ Após isso realizamos um outro teste para descobrimos se o item presente naquela
 
 # Relatório exercício 06 - 
 
-Pergunta:
+### Pergunta:
 
 Escreva um método recursivo que receba uma frase e retorne a mesma frase, sem nenhuma vogal. 
 
-Resposta:
+### Resposta:
 
 
 
