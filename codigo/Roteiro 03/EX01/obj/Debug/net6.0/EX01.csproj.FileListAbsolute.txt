@@ -1,0 +1,5 @@
+C:\Users\roberto.paiva\github-classroom\AED-PCO\lab-aed-pco-2022-2-repaiva\codigo\Roteiro 03\EX01\obj\Debug\net6.0\EX01.csproj.AssemblyReference.cache
+C:\Users\roberto.paiva\github-classroom\AED-PCO\lab-aed-pco-2022-2-repaiva\codigo\Roteiro 03\EX01\obj\Debug\net6.0\EX01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\roberto.paiva\github-classroom\AED-PCO\lab-aed-pco-2022-2-repaiva\codigo\Roteiro 03\EX01\obj\Debug\net6.0\EX01.AssemblyInfoInputs.cache
+C:\Users\roberto.paiva\github-classroom\AED-PCO\lab-aed-pco-2022-2-repaiva\codigo\Roteiro 03\EX01\obj\Debug\net6.0\EX01.AssemblyInfo.cs
+C:\Users\roberto.paiva\github-classroom\AED-PCO\lab-aed-pco-2022-2-repaiva\codigo\Roteiro 03\EX01\obj\Debug\net6.0\EX01.csproj.CoreCompileInputs.cache
