@@ -1,25 +1,33 @@
 ﻿
-int []A = new int {10, 20, 30, 40, 50};
+int []A = new int []{10, 20, 30, 80, 100, 120};
 Console.WriteLine("Informe o valor que deseja procurar");
 int pesq = int.Parse(Console.ReadLine());
-int inicio=0;
-int meio=A.Length/2;
-int fim=A.Length-1;
-int resultado =pesquisa(A, inicio, meio, fim, pesq);
+int resultado =pesquisa(A, pesq);
 if(resultado==-1)
     Console.WriteLine("O número desejado não existe no vetor");
 else
-    Console.WriteLine("A posição do número desejado é: {0}", resultado);
+    Console.WriteLine("O número desejado existe no vetor");
 
-int pesquisa (int vet, int inicio, int meio, int fim, int pesq){
-    if(inicio>fim)
+int pesquisa (int []vet, int pesq){
+    int fim = vet.Length-1;
+    int inicio = 0;
+    int meio=(inicio+fim)/2;
+    int []B = new int [meio+1];
+    if(vet[meio]== pesq)
         return meio;
-    if(vet[meio]==pesq)
-        return meio;
+    else if(meio==0)
+            return -1;
     else{ 
-        if(pesq>vet[meio])
-            return pesquisa(meio+1);
-        if(pesq>vet[meio])
-            return pesquisa(meio-1);
+        if(pesq>vet[meio]){
+            inicio=meio;
+            for(int i=inicio+1; i<=fim; i++)
+                B[i-meio-1]=vet[i];
+            return pesquisa(B, pesq);
+            }
+        fim = meio;
+        for(int i=inicio; i<fim; i++)
+                B[i]=vet[i];
+        return pesquisa(B, pesq);   
     }
+    
 }
