@@ -32,7 +32,7 @@ Pesquisa binária com pos
 
 ### Resposta:
 
- 
+
 
 ![Print EX03](img/)
 
@@ -44,8 +44,9 @@ Pesquisa binária sem pos
 
 ### Resposta:
 
- 
+Para essa questão foi necessário criar um vetor auxiliar B que a cada ciclo da recursividade partia o vetor ao meio. Esse vetor auxiliar B é passado como parâmetro de entrada na próxima chamada da função, assim montando um ciclo. É necessário também realizar alguns testes, sendo eles, "if(vet[meio]== pesq)" que é nossa conidção de parada, testa se o número desejado é igual ao meio, partindo o vetor no meio a cada ciclo uma hora entraremos nesse if caso o número desejado exista no vetor. Caso não entre no if anterior, testamos se o meio é igual a zero, pois, se o meio é igual a zero e não entrou no if anterior obrigatoriamente não existe o parâmetro no vetor, assim retornando -1. Caso não entre em nenhum dos returns anteriosres há mais dois testes para descobrirmos se vamos prencher o vetor auxiliar B com a parte de superior ou inferior ao meio.
 
-![Print EX03](img/)
+O vertor utilizado na execução do pragrama foi:
+int []A = new int []{10, 20, 30, 80, 100, 120};
 
-
+![Print EX03](img/EX04.png)
