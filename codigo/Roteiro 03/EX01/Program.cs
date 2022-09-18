@@ -9,9 +9,7 @@ else
     Console.WriteLine("O número desejado existe no vetor");
 
 int pesquisa (int []vet, int pesq){
-    int fim = vet.Length-1;
-    int inicio = 0;
-    int meio=(inicio+fim)/2;
+    int fim = vet.Length-1; int inicio = 0; int meio=(inicio+fim)/2;
     int []B = new int [meio+1];
     if(vet[meio]== pesq)
         return meio;
@@ -29,5 +27,4 @@ int pesquisa (int []vet, int pesq){
                 B[i]=vet[i];
         return pesquisa(B, pesq);   
     }
-    
 }
