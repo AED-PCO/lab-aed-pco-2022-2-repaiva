@@ -32,9 +32,9 @@ Pesquisa binária com pos
 
 ### Resposta:
 
+A pesquisa binária com o auxiliar pos se assemelha muito a pesquisa sem o pos, tendo em vista que não há a necessidade da mesma. A explicação mais completa da resolução se encontra na próxima questão, aqui é importante ressaltarmos somente que o "pos" cumpre o papel do "meio" do próximo exercício. 
 
-
-![Print EX03](img/)
+![Print EX03](img/EX03.png)
 
 # Relatório exercício 04 - 
 
@@ -49,4 +49,4 @@ Para essa questão foi necessário criar um vetor auxiliar B que a cada ciclo da
 O vertor utilizado na execução do pragrama foi:
 int []A = new int []{10, 20, 30, 80, 100, 120};
 
-![Print EX03](img/EX04.png)
+![Print EX04](img/EX04.png)
