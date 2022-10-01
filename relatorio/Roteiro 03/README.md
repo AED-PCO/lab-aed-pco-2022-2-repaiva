@@ -20,7 +20,7 @@ Ordenação binária sem pos
 
 ### Resposta:
 
-
+Nesse exercício há várias funções, "lerVet" para ler o vetor desejado pelo usuário, "imprimeVet" para imprimir esse vetor no terminal, "parteVet" para partir o vetor de forma binária e recursiva e por fim "ordenaVet" faz as comparações entre os vetores para ordena-los. A função parteVet chama a função ordenaVet passando os vetores com uma uma única posição conforme a ideia de partição binária. 
 
 ![Print EX03](img/)
 
