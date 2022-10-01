@@ -2,38 +2,38 @@
 int tam = int.Parse(Console.ReadLine());
 int []resultado = new int[tam];
 lerVet(resultado);
-resultado = parteVet(resultado);
+resultado = parteVet(resultado, tam);
 imprimeVet(resultado);
 
-int[] parteVet (int []vet){
-    if(vet.Length==1)
+int[] parteVet (int []vet, int pos){
+    if(pos==1)
         return vet;
 
-    if(vet.Length%2==0){
-        int []B = new int [((vet.Length)/2)];
-        int []C = new int [((vet.Length)/2)];
+    if(pos%2==0){
+        int []B = new int [((pos)/2)];
+        int []C = new int [((pos)/2)];
         for(int i=0; i<B.Length; i++)   
             B[i]=vet[i];
         for(int i=0; i<C.Length; i++)
-            C[i]=vet[i+vet.Length/2]; 
+            C[i]=vet[i+pos/2]; 
         int[] ordeB = new int [B.Length];
         int[] ordeC = new int [C.Length];  
-        ordeB = parteVet(B);
-        ordeC = parteVet(C);
+        ordeB = parteVet(B, pos/2);
+        ordeC = parteVet(C, pos/2);
         resultado = ordenaVet(ordeB, ordeC);
     }
 
     else {
-    int []B = new int [(vet.Length/2)];
-    int []C = new int [((vet.Length/2)+1)];
+    int []B = new int [(pos/2)];
+    int []C = new int [((pos/2)+1)];
     for(int i=0; i<B.Length; i++)   
         B[i]=vet[i];
     for(int i=0; i<C.Length; i++)
-        C[i]=vet[i+vet.Length/2];
+        C[i]=vet[i+pos/2];
     int[] ordeB = new int [B.Length];
     int[] ordeC = new int [C.Length];
-    ordeB = parteVet(B);
-    ordeC = parteVet(C);
+    ordeB = parteVet(B, pos/2);
+    ordeC = parteVet(C, pos/2+1);
     resultado = ordenaVet(ordeB, ordeC);
     }
 

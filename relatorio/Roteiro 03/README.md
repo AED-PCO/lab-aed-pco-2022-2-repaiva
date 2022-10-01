@@ -10,7 +10,9 @@ Ordenação binária com pos
 
 ### Resposta:
 
-![Print EX03](img/)
+A ordenação binária com o auxiliar pos se assemelha muito a ordenação sem o pos, tendo em vista que não há a necessidade da mesma. A explicação mais completa da resolução se encontra na próxima questão, aqui é importante ressaltarmos somente que o "pos" cumpre o papel de ir nos informar o tamanho do vetor que vamos quebrando recursivamente a cada ciclo. 
+
+![Print EX03](img/EX01.png)
 
 # Relatório exercício 02 - 
 
@@ -20,9 +22,9 @@ Ordenação binária sem pos
 
 ### Resposta:
 
-Nesse exercício há várias funções, "lerVet" para ler o vetor desejado pelo usuário, "imprimeVet" para imprimir esse vetor no terminal, "parteVet" para partir o vetor de forma binária e recursiva e por fim "ordenaVet" faz as comparações entre os vetores para ordena-los. A função parteVet chama a função ordenaVet passando os vetores com uma uma única posição conforme a ideia de partição binária. 
+Nesse exercício há várias funções, "lerVet" para ler o vetor desejado pelo usuário, "imprimeVet" para imprimir esse vetor no terminal, "parteVet" para partir o vetor de forma binária e recursiva, e por fim "ordenaVet" que faz as comparações entre os vetores para ordena-los. A função parteVet parte e prenche os vetores auxiliares A, B, ordeB e ordeC de forma recursiva até a condição de parada que neste caso é quando o vetor tenha somente uma posição. Após isso a função chama a função ordenaVet passando os vetores ordeB e ordeC com uma uma única posição, conforme a ideia de partição binária, assim tendo a certeza de que os vetores passados para a função ordenaVet estão ordenados. 
 
-![Print EX03](img/)
+![Print EX03](img/EX02.png)
 
 # Relatório exercício 03 - 
 
