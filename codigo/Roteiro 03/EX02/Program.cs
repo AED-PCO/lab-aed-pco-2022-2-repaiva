@@ -1,8 +1,12 @@
 ﻿Console.WriteLine("Informe o tamanho do vetor desejado (maior que zero)");
 int tam = int.Parse(Console.ReadLine());
 int []resultado = new int[tam];
-lerVet(resultado);
+prencherVet(resultado);
+Console.WriteLine("Vetor Gerado:");
+imprimeVet(resultado);
 resultado = parteVet(resultado);
+Console.WriteLine();
+Console.WriteLine("O vetor ordenado é:");
 imprimeVet(resultado);
 
 int[] parteVet (int []vet){
@@ -65,16 +69,16 @@ int []ordenaVet(int []vet1, int []vet2){
     return ordenado;
 }
 
-void lerVet (int []vet){
-    Console.WriteLine("Digite os {0} valores do vetor", tam);
-    for(int i = 0; i<vet.Length; i++)
-        vet[i] = int.Parse(Console.ReadLine());
+void imprimeVet (int []vet){
+    for (int  i = 0; i < vet.Length;  i++ ) 
+        Console.Write(vet[i]+"\t"); 
 }
 
-void imprimeVet (int []vet){
-    Console.WriteLine();
-    Console.WriteLine("O vetor ordenado é:");
-    for (int  i = 0; i < resultado.Length;  i++ ) 
-        Console.Write(resultado[i]+"\t"); 
+
+int []prencherVet (int []vet){
+    Random aux = new Random();
+    for(int i = 0; i<vet.Length; i++)
+        vet[i] = aux.Next(100);
+    return vet;
 }
 

@@ -1,20 +1,31 @@
-﻿
-int []A = new int []{10, 20, 30, 80, 100, 120};
+﻿Console.WriteLine("Informe o tamanho do vetor desejado (maior que zero)");
+int tam = int.Parse(Console.ReadLine());
+int []A = new int[tam];
+prencherVet(A);
+Array.Sort(A);
+Console.WriteLine("Vetor Gerado:");
+imprimeVet(A);
+Console.WriteLine();
 Console.WriteLine("Informe o valor que deseja procurar");
 int pesq = int.Parse(Console.ReadLine());
-int resultado =pesquisa(A, pesq);
+int aux=0;
+int resultado = pesquisa(A, pesq);
 if(resultado==-1)
     Console.WriteLine("O número desejado não existe no vetor");
 else
-    Console.WriteLine("O número desejado existe no vetor");
+    Console.WriteLine("O número desejado existe no vetor na posição {0}", resultado);
 
 int pesquisa (int []vet, int pesq){
     int fim = vet.Length-1;
     int inicio = 0;
     int meio=(inicio+fim)/2;
     int []B = new int [meio+1];
-    if(vet[meio]== pesq)
-        return meio;
+    if(vet[meio]== pesq){
+        for(int i=0; i<A.Length; i++)
+            if(vet[meio]==A[i])
+                aux=i;
+        return aux;
+    }
     else if(meio==0)
             return -1;
     else{ 
@@ -30,4 +41,17 @@ int pesquisa (int []vet, int pesq){
         return pesquisa(B, pesq);   
     }
     
+}
+
+void imprimeVet (int []vet){
+    for (int  i = 0; i < vet.Length;  i++ ) 
+        Console.Write(vet[i]+"\t"); 
+}
+
+
+int []prencherVet (int []vet){
+    Random aux = new Random();
+    for(int i = 0; i<vet.Length; i++)
+        vet[i] = aux.Next(100);
+    return vet;
 }
