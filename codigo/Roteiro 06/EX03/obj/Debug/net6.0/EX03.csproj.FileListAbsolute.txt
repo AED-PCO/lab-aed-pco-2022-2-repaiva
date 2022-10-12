@@ -1,0 +1,15 @@
+D:\FACULDADE\Algoritmos e Estruturas de Dados\Roteiro6\EX03\bin\Debug\net6.0\EX03.exe
+D:\FACULDADE\Algoritmos e Estruturas de Dados\Roteiro6\EX03\bin\Debug\net6.0\EX03.deps.json
+D:\FACULDADE\Algoritmos e Estruturas de Dados\Roteiro6\EX03\bin\Debug\net6.0\EX03.runtimeconfig.json
+D:\FACULDADE\Algoritmos e Estruturas de Dados\Roteiro6\EX03\bin\Debug\net6.0\EX03.dll
+D:\FACULDADE\Algoritmos e Estruturas de Dados\Roteiro6\EX03\bin\Debug\net6.0\EX03.pdb
+D:\FACULDADE\Algoritmos e Estruturas de Dados\Roteiro6\EX03\obj\Debug\net6.0\EX03.csproj.AssemblyReference.cache
+D:\FACULDADE\Algoritmos e Estruturas de Dados\Roteiro6\EX03\obj\Debug\net6.0\EX03.GeneratedMSBuildEditorConfig.editorconfig
+D:\FACULDADE\Algoritmos e Estruturas de Dados\Roteiro6\EX03\obj\Debug\net6.0\EX03.AssemblyInfoInputs.cache
+D:\FACULDADE\Algoritmos e Estruturas de Dados\Roteiro6\EX03\obj\Debug\net6.0\EX03.AssemblyInfo.cs
+D:\FACULDADE\Algoritmos e Estruturas de Dados\Roteiro6\EX03\obj\Debug\net6.0\EX03.csproj.CoreCompileInputs.cache
+D:\FACULDADE\Algoritmos e Estruturas de Dados\Roteiro6\EX03\obj\Debug\net6.0\EX03.dll
+D:\FACULDADE\Algoritmos e Estruturas de Dados\Roteiro6\EX03\obj\Debug\net6.0\refint\EX03.dll
+D:\FACULDADE\Algoritmos e Estruturas de Dados\Roteiro6\EX03\obj\Debug\net6.0\EX03.pdb
+D:\FACULDADE\Algoritmos e Estruturas de Dados\Roteiro6\EX03\obj\Debug\net6.0\EX03.genruntimeconfig.cache
+D:\FACULDADE\Algoritmos e Estruturas de Dados\Roteiro6\EX03\obj\Debug\net6.0\ref\EX03.dll
