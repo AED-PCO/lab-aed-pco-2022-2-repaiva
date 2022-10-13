@@ -1,77 +1,45 @@
-﻿Console.WriteLine("Informe o tamanho do vetor desejado (maior que zero)");
+﻿Console.WriteLine("mergeSort");
+Console.WriteLine("Informe o tamanho do vetor desejado (maior que zero)");
 int tam = int.Parse(Console.ReadLine());
-int []resultado = new int[tam];
-prencherVet(resultado);
+int []vetor = new int[tam];
+prencherVet(vetor);
 Console.WriteLine("Vetor Gerado:");
-imprimeVet(resultado);
-resultado = parteVet(resultado);
-Console.WriteLine("O vetor ordenado é:");
-imprimeVet(resultado);
+imprimeVet(vetor);
+mergeSort(0, vetor.Length-1);
+Console.WriteLine("Vetor Ordenado:");
+imprimeVet(vetor);
 
-int[] parteVet (int []vet){
-    if(vet.Length==1)
-        return vet;
-
-    if(vet.Length%2==0){
-        int []B = new int [((vet.Length)/2)];
-        int []C = new int [((vet.Length)/2)];
-        for(int i=0; i<B.Length; i++)   
-            B[i]=vet[i];
-        for(int i=0; i<C.Length; i++)
-            C[i]=vet[i+vet.Length/2]; 
-        int[] ordeB = new int [B.Length];
-        int[] ordeC = new int [C.Length];  
-        ordeB = parteVet(B);
-        ordeC = parteVet(C);
-        resultado = ordenaVet(ordeB, ordeC);
+void mergeSort (int inicio, int fim){
+    if (inicio < fim){
+        int meio = (inicio + fim) / 2;
+        mergeSort(inicio, meio);
+        mergeSort(meio + 1, fim);
+        intercalar(inicio, meio, fim);
     }
-
-    else {
-    int []B = new int [(vet.Length/2)];
-    int []C = new int [((vet.Length/2)+1)];
-    for(int i=0; i<B.Length; i++)   
-        B[i]=vet[i];
-    for(int i=0; i<C.Length; i++)
-        C[i]=vet[i+vet.Length/2];
-    int[] ordeB = new int [B.Length];
-    int[] ordeC = new int [C.Length];
-    ordeB = parteVet(B);
-    ordeC = parteVet(C);
-    resultado = ordenaVet(ordeB, ordeC);
-    }
-
-    return resultado;
 }
 
-int []ordenaVet(int []vet1, int []vet2){
-    int cont1=0; 
-    int cont2=0;
-    int []ordenado = new int [vet1.Length+vet2.Length];
-    for(int i = 0; i<ordenado.Length; i++){
-        if(cont1==vet1.Length){
-            ordenado[i]=vet2[cont2];
-            cont2++;
-        }
-        else if(cont2==vet2.Length){
-            ordenado[i]=vet1[cont1];
-            cont1++;
-        }
-        else if(vet1[cont1]<vet2[cont2]){
-            ordenado[i]=vet1[cont1];
-            cont1++;
-        }
-        else{
-            ordenado[i]=vet2[cont2];
-            cont2++;
-        }
-    }
-    return ordenado;
-}
+ void intercalar(int inicio, int meio, int fim){
+      int ninicio = (meio+1)-inicio;
+      int nfim = fim - meio;
+      int[] arrayinicio = new int[ninicio+1];
+      int[] arrayfim = new int[nfim+1];
+      arrayinicio[ninicio] = arrayfim[nfim] = 0x7FFFFFFF;
+      int iinicio, ifim, i;     
+      for (iinicio = 0; iinicio < ninicio; iinicio++){
+         arrayinicio[iinicio] = vetor[inicio+iinicio];
+      }
+      for (ifim = 0; ifim < nfim; ifim++){
+         arrayfim[ifim] = vetor[(meio+1)+ifim];
+      }
+      for (iinicio = ifim = 0, i = inicio; i <= fim; i++){
+         vetor[i] = (arrayinicio[iinicio] <= arrayfim[ifim]) ? arrayinicio[iinicio++] : arrayfim[ifim++];
+      }
+ }
 
 void imprimeVet (int []vet){
     for (int  i = 0; i < vet.Length;  i++ ) 
-        Console.Write(vet[i]+"\t"); 
-    Console.WriteLine();
+        Console.Write(vet[i]+"\t");
+    Console.WriteLine(); 
 }
 
 int []prencherVet (int []vet){
