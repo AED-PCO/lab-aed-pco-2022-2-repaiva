@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FACULDADE\\Algoritmos e Estruturas de Dados\\Roteiro6\\EX03\\EX03.csproj",
+      "projectUniqueName": "C:\\Users\\roberto.paiva\\github-classroom\\AED-PCO\\lab-aed-pco-2022-2-repaiva\\codigo\\Roteiro 06\\EX03\\EX03.csproj",
       "projectName": "EX03",
-      "projectPath": "D:\\FACULDADE\\Algoritmos e Estruturas de Dados\\Roteiro6\\EX03\\EX03.csproj",
+      "projectPath": "C:\\Users\\roberto.paiva\\github-classroom\\AED-PCO\\lab-aed-pco-2022-2-repaiva\\codigo\\Roteiro 06\\EX03\\EX03.csproj",
       "packagesPath": "C:\\Users\\roberto.paiva\\.nuget\\packages\\",
-      "outputPath": "D:\\FACULDADE\\Algoritmos e Estruturas de Dados\\Roteiro6\\EX03\\obj\\",
+      "outputPath": "C:\\Users\\roberto.paiva\\github-classroom\\AED-PCO\\lab-aed-pco-2022-2-repaiva\\codigo\\Roteiro 06\\EX03\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\roberto.paiva\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -58,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.305\\RuntimeIdentifierGraph.json"
       }
     }
   }

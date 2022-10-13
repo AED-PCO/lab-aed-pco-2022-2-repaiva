@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FACULDADE\\Algoritmos e Estruturas de Dados\\Roteiro6\\EX07\\EX07.csproj",
+      "projectUniqueName": "C:\\Users\\roberto.paiva\\github-classroom\\AED-PCO\\lab-aed-pco-2022-2-repaiva\\codigo\\Roteiro 06\\EX07\\EX07.csproj",
       "projectName": "EX07",
-      "projectPath": "D:\\FACULDADE\\Algoritmos e Estruturas de Dados\\Roteiro6\\EX07\\EX07.csproj",
+      "projectPath": "C:\\Users\\roberto.paiva\\github-classroom\\AED-PCO\\lab-aed-pco-2022-2-repaiva\\codigo\\Roteiro 06\\EX07\\EX07.csproj",
       "packagesPath": "C:\\Users\\roberto.paiva\\.nuget\\packages\\",
-      "outputPath": "D:\\FACULDADE\\Algoritmos e Estruturas de Dados\\Roteiro6\\EX07\\obj\\",
+      "outputPath": "C:\\Users\\roberto.paiva\\github-classroom\\AED-PCO\\lab-aed-pco-2022-2-repaiva\\codigo\\Roteiro 06\\EX07\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\roberto.paiva\\AppData\\Roaming\\NuGet\\NuGet.Config"
