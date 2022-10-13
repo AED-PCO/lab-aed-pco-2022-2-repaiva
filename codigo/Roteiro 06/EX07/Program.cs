@@ -17,8 +17,6 @@ void countingSort (){
             maior = vetor[i];
     int []cont = new int[maior+1];
     int []ordenado = new int[vetor.Length];
-    for(int i = 0; i<cont.Length; i++)
-        cont[i] = 0;
     for(int i = 0; i<vetor.Length; i++)
             cont[vetor[i]]++;
     for(int i = 1; i<cont.Length; i++)
