@@ -32,9 +32,6 @@
 #### Exercício 02
 ![Print EX01](img/lab2/EX02.png)
 
-#### Exercício 02 - Parte2
-![Print EX01](img/lab2/EX02_2.png)
-
 #### Exercício 03
 ![Print EX01](img/lab2/EX03.png)
 
@@ -55,9 +52,6 @@
 #### Exercício 02
 ![Print EX01](img/lab3/EX02.png)
 
-#### Exercício 02 - Parte2
-![Print EX01](img/lab3/EX02_2.png)
-
 #### Exercício 03
 ![Print EX01](img/lab3/EX03.png)
 
@@ -71,9 +65,6 @@
 
 #### Exercício 02
 ![Print EX01](img/lab6/EX02.png)
-
-#### Exercício 02 - Parte2
-![Print EX01](img/lab6/EX02_2.png)
 
 #### Exercício 03
 ![Print EX01](img/lab6/EX03.png)
