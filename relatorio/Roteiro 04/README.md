@@ -1,2 +1,2 @@
 
-## todos os ráficos se encontram na pasta "img"
+## TODOS OS GRÁFICOS NA PASTA "IMG". 
