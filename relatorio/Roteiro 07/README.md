@@ -23,11 +23,3 @@ Na terceira questão da prova primeiramente fazemos a leitura do arquivo "entrat
 ## Questão 05
 
 ![Print EX 05](img/EX05)
-
-## Questão 06
-
-![Print EX 06](img/EX06)
-
-## Questão 07
-
-![Print EX 07](img/EX07)
