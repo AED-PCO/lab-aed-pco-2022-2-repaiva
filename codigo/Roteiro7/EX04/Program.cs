@@ -76,3 +76,11 @@ void imprimeVet (long []vet){
         Console.Write(vet[i]+"\t");
     Console.WriteLine(); 
 }
+
+using (StreamWriter writer = new StreamWriter("CPFs.txt", true))
+{
+    for(int i = 0; i<vetor.Length; i++){
+        writer.Write(vetor[i]);
+        writer.Write("   ");
+    }
+}
