@@ -1,8 +1,10 @@
 ﻿Console.WriteLine("Informe quantos CPFs deseja gerar");
 int tam = int.Parse(Console.ReadLine());
 long []vetor = new long [tam];
-preencheVet(vetor);
-mergeSort(0, tam-1);
+preencheVet (vetor);
+Console.WriteLine("Vetor Gerado:");
+imprimeVet(vetor);
+quickSort(0, tam-1);
 Console.WriteLine("Vetor Ordenado:");
 imprimeVet(vetor);
 
@@ -46,32 +48,28 @@ long GerarCpf(){
     return retorno;
 }
 
-void mergeSort (long inicio, long fim){
-    if (inicio < fim){
-        long meio = (inicio + fim) / 2;
-        mergeSort(inicio, meio);
-        mergeSort(meio + 1, fim);
-        intercalar(inicio, meio, fim);
+void quickSort (int inicio, int fim){
+    int i = inicio;
+    int j = fim;
+    long pivo = vetor[(inicio+fim)/2];
+    while(i<=j){
+        while(vetor[i] < pivo)
+            i++;
+        while(vetor[j] > pivo)
+            j--;
+            if(i<=j){
+                long aux = vetor[i];
+                vetor[i] = vetor[j];
+                vetor[j] = aux;
+                i++;
+                j--;
+            }
     }
+    if(inicio<j)
+        quickSort(inicio, j);
+    if(i<fim)
+        quickSort(i, fim);
 }
-
- void intercalar(long inicio, long meio, long fim){
-      long ninicio = (meio+1)-inicio;
-      long nfim = fim - meio;
-      long[] arrayinicio = new long[ninicio+1];
-      long[] arrayfim = new long[nfim+1];
-      arrayinicio[ninicio] = arrayfim[nfim] = 0x7FFFFFFF;
-      long iinicio, ifim, i;     
-      for (iinicio = 0; iinicio < ninicio; iinicio++){
-         arrayinicio[iinicio] = vetor[inicio+iinicio];
-      }
-      for (ifim = 0; ifim < nfim; ifim++){
-         arrayfim[ifim] = vetor[(meio+1)+ifim];
-      }
-      for (iinicio = ifim = 0, i = inicio; i <= fim; i++){
-         vetor[i] = (arrayinicio[iinicio] <= arrayfim[ifim]) ? arrayinicio[iinicio++] : arrayfim[ifim++];
-      }
- }
 
 void imprimeVet (long []vet){
     for (int  i = 0; i < vet.Length;  i++ ) 
