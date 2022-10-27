@@ -2,7 +2,7 @@
 int tam = int.Parse(Console.ReadLine());
 long []vetor = new long [tam];
 preencheVet(vetor);
-//mergeSort(0, vetor.Length-1);
+mergeSort(0, tam-1);
 Console.WriteLine("Vetor Ordenado:");
 imprimeVet(vetor);
 

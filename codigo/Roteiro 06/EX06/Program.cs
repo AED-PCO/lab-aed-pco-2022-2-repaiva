@@ -1,7 +1,7 @@
 ﻿Console.WriteLine("mergeSort");
 Console.WriteLine("Informe o tamanho do vetor desejado (maior que zero)");
-int tam = int.Parse(Console.ReadLine());
-int []vetor = new int[tam];
+long tam = long.Parse(Console.ReadLine());
+long []vetor = new long[tam];
 prencherVet(vetor);
 Console.WriteLine("Vetor Gerado:");
 imprimeVet(vetor);
@@ -9,22 +9,22 @@ mergeSort(0, vetor.Length-1);
 Console.WriteLine("Vetor Ordenado:");
 imprimeVet(vetor);
 
-void mergeSort (int inicio, int fim){
+void mergeSort (long inicio, long fim){
     if (inicio < fim){
-        int meio = (inicio + fim) / 2;
+        long meio = (inicio + fim) / 2;
         mergeSort(inicio, meio);
         mergeSort(meio + 1, fim);
-        intercalar(inicio, meio, fim);
+        longercalar(inicio, meio, fim);
     }
 }
 
- void intercalar(int inicio, int meio, int fim){
-      int ninicio = (meio+1)-inicio;
-      int nfim = fim - meio;
-      int[] arrayinicio = new int[ninicio+1];
-      int[] arrayfim = new int[nfim+1];
+ void longercalar(long inicio, long meio, long fim){
+      long ninicio = (meio+1)-inicio;
+      long nfim = fim - meio;
+      long[] arrayinicio = new long[ninicio+1];
+      long[] arrayfim = new long[nfim+1];
       arrayinicio[ninicio] = arrayfim[nfim] = 0x7FFFFFFF;
-      int iinicio, ifim, i;     
+      long iinicio, ifim, i;     
       for (iinicio = 0; iinicio < ninicio; iinicio++){
          arrayinicio[iinicio] = vetor[inicio+iinicio];
       }
@@ -36,15 +36,15 @@ void mergeSort (int inicio, int fim){
       }
  }
 
-void imprimeVet (int []vet){
-    for (int  i = 0; i < vet.Length;  i++ ) 
+void imprimeVet (long []vet){
+    for (long  i = 0; i < vet.Length;  i++ ) 
         Console.Write(vet[i]+"\t");
     Console.WriteLine(); 
 }
 
-int []prencherVet (int []vet){
+long []prencherVet (long []vet){
     Random aux = new Random();
-    for(int i = 0; i<vet.Length; i++)
+    for(long i = 0; i<vet.Length; i++)
         vet[i] = aux.Next(100);
     return vet;
 }
