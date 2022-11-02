@@ -30,11 +30,10 @@
             sn = Console.ReadLine();
             }while((sn == "S" || sn == "s") && aux>0);
             }
-            Console.WriteLine("Vetor com os valores retirados");
+            Console.WriteLine("Vetor após os valores retirados");
             imprimeVet(vet);
             Console.WriteLine();
         }
-
     static void imprimeVet (int []vet){
         int j = aux;
         int [] VetAux = new int [vet.Length];

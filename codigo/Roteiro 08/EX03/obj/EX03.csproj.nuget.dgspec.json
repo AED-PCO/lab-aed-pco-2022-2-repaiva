@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\FACULDADE\\Algoritmos e Estruturas de Dados\\Roteiro8\\EX03\\EX03.csproj": {}
+    "C:\\Users\\roberto.paiva\\github-classroom\\AED-PCO\\lab-aed-pco-2022-2-repaiva\\codigo\\Roteiro 08\\EX03\\EX03.csproj": {}
   },
   "projects": {
-    "D:\\FACULDADE\\Algoritmos e Estruturas de Dados\\Roteiro8\\EX03\\EX03.csproj": {
+    "C:\\Users\\roberto.paiva\\github-classroom\\AED-PCO\\lab-aed-pco-2022-2-repaiva\\codigo\\Roteiro 08\\EX03\\EX03.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FACULDADE\\Algoritmos e Estruturas de Dados\\Roteiro8\\EX03\\EX03.csproj",
+        "projectUniqueName": "C:\\Users\\roberto.paiva\\github-classroom\\AED-PCO\\lab-aed-pco-2022-2-repaiva\\codigo\\Roteiro 08\\EX03\\EX03.csproj",
         "projectName": "EX03",
-        "projectPath": "D:\\FACULDADE\\Algoritmos e Estruturas de Dados\\Roteiro8\\EX03\\EX03.csproj",
+        "projectPath": "C:\\Users\\roberto.paiva\\github-classroom\\AED-PCO\\lab-aed-pco-2022-2-repaiva\\codigo\\Roteiro 08\\EX03\\EX03.csproj",
         "packagesPath": "C:\\Users\\roberto.paiva\\.nuget\\packages\\",
-        "outputPath": "D:\\FACULDADE\\Algoritmos e Estruturas de Dados\\Roteiro8\\EX03\\obj\\",
+        "outputPath": "C:\\Users\\roberto.paiva\\github-classroom\\AED-PCO\\lab-aed-pco-2022-2-repaiva\\codigo\\Roteiro 08\\EX03\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\roberto.paiva\\AppData\\Roaming\\NuGet\\NuGet.Config"
