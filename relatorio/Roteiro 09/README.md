@@ -9,3 +9,9 @@ Nessa questão, no próprio progrma principal "main" fazemos um loop chamando a 
 Nessa questão, no próprio progrma principal "main" fazemos um loop chamando a função de iserir valor na fila com flag de -1, assim temos uma fila inicial. Após isso, chamamos a função "FilaParaFila" que contém a solução do problema de fato. Nesta função, no primeiro loop inserimos os valores da fila original em uma fila auxiliar e em uma pilha auxiliar. Em um proximo loop inserimos os valores da pilha em uma fila de saída e voltamos com os valores armazenados na fila auxilar para a fila original. 
 
 ![Print EX 02](img/EX02.png)
+
+## Questão 03 - Copiar uma lista para outra lista metade original e metade invertida.
+
+Nesse execício a função de inserir valor já foi explicada no relatório do laboratório anterior. A função ListaParaLista cria um lista auxiliar, pega o ultimo valor da lista original e coloca na primeira posição da lista auxiliar. Sendo assim, teremos agora duas lista, a lista orignal com a ordem inicial, e a lista auxiliar com a ordem inversa, agora basta concatenar as duas em uma lista resultante que imprimimos no console. 
+
+![Print EX 02](img/EX03.png)
