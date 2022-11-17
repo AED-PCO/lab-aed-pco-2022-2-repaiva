@@ -3,42 +3,17 @@
     private static void Main(string[] args)
     {
         Lista lista = new Lista();
-        Elemento elemento = new Elemento();
-        Elemento elemento01 = new Elemento();
-        Elemento elemento02 = new Elemento();
-
-        Console.WriteLine("Informe a posição que deseja inserir");
-        int pos = int.Parse(Console.ReadLine());
-        Console.WriteLine("Informe o valor que deseja inserir");
-        int val = int.Parse(Console.ReadLine());
-        elemento.aluno.Matricula = val;
-        lista.inserir(elemento, pos);
-        Console.WriteLine("Informe a posição que deseja inserir");
-        pos = int.Parse(Console.ReadLine());
-        Console.WriteLine("Informe o valor que deseja inserir");
-        val = int.Parse(Console.ReadLine());
-        elemento01.aluno.Matricula = val;
-        lista.inserir(elemento01, pos);
-        Console.WriteLine("Informe a posição que deseja inserir");
-        pos = int.Parse(Console.ReadLine());
-        Console.WriteLine("Informe o valor que deseja inserir");
-        val = int.Parse(Console.ReadLine());
-        elemento02.aluno.Matricula = val;
-        lista.inserir(elemento02, pos);
-        lista.imprimir();
-        string sn = "";
-        do
+        int flag = 0;
+        while(flag != -1)
         {
-            Console.WriteLine("Deseja retirar algum valor? S/N");
-            sn = Console.ReadLine();
-            if(sn == "S" || sn == "s")
+            Console.WriteLine("ESCOLHA UMA OPÇÃO: \n 1 - Inserir \n 2 - retirar \n -1 termina");
+            flag = int.Parse(Console.ReadLine());
+            switch(flag)
             {
-                Console.WriteLine("Qual elemento deseja retirar da lista?");
-                val = int.Parse(Console.ReadLine());
-                lista.retirar(val);
+                case 1: lista.inserir(); break;
+                case 2: lista.retirar(); break;
             }
-        }while(sn == "S" || sn == "s");
-        lista.imprimir();
+        }
     }
 }
 public class Aluno
@@ -73,20 +48,19 @@ public class Lista
         ultimo.aluno = null;
         ultimo.proximo = null;
     }
-    public bool confereSeVazia()
+    public void inserir()
     {
-        if(primeiro.proximo == null)
-            return true;
-        else
-            return false;
-    }
-    public void inserir(Elemento novo, int pos)
-    {
+        Console.WriteLine("Informe a posição que deseja inserir (-1 termina)");
+        int pos = int.Parse(Console.ReadLine());
+        Console.WriteLine("Informe o valor que deseja inserir");
+        int val = int.Parse(Console.ReadLine());
+        Elemento elemento = new Elemento();
+        elemento.aluno.Matricula = val;
         int cont = 0;
-        if (confereSeVazia())
+        if (primeiro.proximo == null)
         {
-            primeiro.proximo = novo;
-            ultimo = novo;
+            primeiro.proximo = elemento;
+            ultimo = elemento;
         }
         else
         {
@@ -96,13 +70,16 @@ public class Lista
                 cont++;
                 aux = aux.proximo;
             }
-            novo.proximo = aux.proximo;
-            aux.proximo = novo; 
+            elemento.proximo = aux.proximo;
+            aux.proximo = elemento; 
         }
+        imprimir();
     }
-    public void retirar(int val)
+    public void retirar()
     {
-        if (confereSeVazia())
+        Console.WriteLine("Informe o valor que deseja retirar");
+        int val = int.Parse(Console.ReadLine());
+        if (primeiro.proximo == null)
             Console.WriteLine("A Lista está vazia");
         else
         {
@@ -119,6 +96,7 @@ public class Lista
                     aux = aux.proximo;    
             }
         }
+        imprimir();
     }
     public void imprimir()
     {

@@ -3,31 +3,17 @@
     static void Main(string[] args)
     {
         Fila fila = new Fila();
-        Elemento elemento = new Elemento();
-        Elemento elemento01 = new Elemento();
-        Elemento elemento02 = new Elemento();
-        Console.WriteLine("Informe o valor que deseja inserir");
-        int val = int.Parse(Console.ReadLine());
-        elemento.aluno.Matricula = val;
-        fila.inserir(elemento);
-        Console.WriteLine("Informe o valor que deseja inserir");
-        val = int.Parse(Console.ReadLine());
-        elemento01.aluno.Matricula = val;
-        fila.inserir(elemento01);
-        Console.WriteLine("Informe o valor que deseja inserir");
-        val = int.Parse(Console.ReadLine());
-        elemento02.aluno.Matricula = val;
-        fila.inserir(elemento02);
-        fila.imprimir();
-        string sn = "";
-        do
+        int flag = 0;
+        while(flag != -1)
         {
-            Console.WriteLine("Deseja retirar algum valor? S/N");
-            sn = Console.ReadLine();
-            if(sn == "S" || sn == "s")
-                fila.retirar();
-        }while(sn == "S" || sn == "s");
-        fila.imprimir();
+            Console.WriteLine("ESCOLHA UMA OPÇÃO: \n 1 - Inserir \n 2 - retirar \n -1 termina");
+            flag = int.Parse(Console.ReadLine());
+            switch(flag)
+            {
+                case 1: fila.inserir(); break;
+                case 2: fila.retirar(); break;
+            }
+        }
     }
 }
 public class Aluno
@@ -62,33 +48,31 @@ public class Fila
         ultimo.aluno = null;
         ultimo.proximo = null;
     }
-    public bool confereSeVazia()
+    public void inserir() 
     {
-        if(primeiro.proximo == null)
-            return true;
-        else
-            return false;
-    }
-    public void inserir(Elemento novo) 
-    {
-        if (confereSeVazia())
+        Console.WriteLine("Informe o valor que deseja inserir");
+        int val = int.Parse(Console.ReadLine());
+        Elemento elemento = new Elemento();
+        elemento.aluno.Matricula = val;
+        if (primeiro.proximo == null)
         {
-            primeiro.proximo = novo;
-            ultimo = novo;
+            primeiro.proximo = elemento;
+            ultimo = elemento;
         }
         else
         {
-            ultimo.proximo = novo;
-            ultimo = novo;
+            ultimo.proximo = elemento;
+            ultimo = elemento;
         }
+        imprimir();
     }
     public void retirar() 
     {
-        if (confereSeVazia())
+        if (primeiro.proximo == null)
             Console.WriteLine("A fila está vazia");        
         else
             primeiro.proximo = primeiro.proximo.proximo;
-        
+        imprimir();
     }
     public void imprimir() 
     {

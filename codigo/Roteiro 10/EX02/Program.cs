@@ -3,31 +3,17 @@
     private static void Main(string[] args)
     {
         Pilha pilha = new Pilha();
-        Elemento elemento = new Elemento();
-        Elemento elemento01 = new Elemento();
-        Elemento elemento02 = new Elemento();
-        Console.WriteLine("Informe o valor que deseja inserir");
-        int val = int.Parse(Console.ReadLine());
-        elemento.aluno.Matricula = val;
-        pilha.inserir(elemento);
-        Console.WriteLine("Informe o valor que deseja inserir");
-        val = int.Parse(Console.ReadLine());
-        elemento01.aluno.Matricula = val;
-        pilha.inserir(elemento01);
-        Console.WriteLine("Informe o valor que deseja inserir");
-        val = int.Parse(Console.ReadLine());
-        elemento02.aluno.Matricula = val;
-        pilha.inserir(elemento02);
-        pilha.imprimir();
-        string sn = "";
-        do
+        int flag = 0;
+        while(flag != -1)
         {
-            Console.WriteLine("Deseja retirar algum valor? S/N");
-            sn = Console.ReadLine();
-            if(sn == "S" || sn == "s")
-                pilha.retirar();
-        }while(sn == "S" || sn == "s");
-        pilha.imprimir();
+            Console.WriteLine("ESCOLHA UMA OPÇÃO: \n 1 - Inserir \n 2 - retirar \n -1 termina");
+            flag = int.Parse(Console.ReadLine());
+            switch(flag)
+            {
+                case 1: pilha.inserir(); break;
+                case 2: pilha.retirar(); break;
+            }
+        }
     }
 }
 public class Aluno
@@ -58,32 +44,31 @@ public class Pilha
         topo.aluno = null;
         topo.proximo = null;
     }
-    public bool confereSeVazia()
+    public void inserir() 
     {
-        if(topo.proximo == null)
-            return true;
-        else
-            return false;
-    }
-    public void inserir(Elemento novo) 
-    {
-        if (confereSeVazia())
-            topo.proximo = novo;
+        Console.WriteLine("Informe o valor que deseja inserir");
+        int val = int.Parse(Console.ReadLine());
+        Elemento elemento = new Elemento();
+        elemento.aluno.Matricula = val;
+        if (topo.proximo == null)
+            topo.proximo = elemento;
         else
         {
-            novo.proximo = topo.proximo;
-            topo.proximo = novo;
+            elemento.proximo = topo.proximo;
+            topo.proximo = elemento;
         }
+        imprimir();
     }
     public void retirar()
     {
-        if (confereSeVazia())
+        if (topo.proximo == null)
             Console.WriteLine("A pilha está vazia");
         else
         {
             Elemento retirado = topo.proximo;
             topo.proximo = topo.proximo.proximo;
         }
+        imprimir();
     }
     public void imprimir()
     {
