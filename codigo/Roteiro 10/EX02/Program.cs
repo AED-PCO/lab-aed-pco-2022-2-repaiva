@@ -6,12 +6,17 @@
         Elemento elemento = new Elemento();
         Elemento elemento01 = new Elemento();
         Elemento elemento02 = new Elemento();
-        Random aux = new Random();
-        elemento.aluno.Matricula = aux.Next(1000);
+        Console.WriteLine("Informe o valor que deseja inserir");
+        int val = int.Parse(Console.ReadLine());
+        elemento.aluno.Matricula = val;
         pilha.inserir(elemento);
-        elemento01.aluno.Matricula = aux.Next(1000);
+        Console.WriteLine("Informe o valor que deseja inserir");
+        val = int.Parse(Console.ReadLine());
+        elemento01.aluno.Matricula = val;
         pilha.inserir(elemento01);
-        elemento02.aluno.Matricula = aux.Next(1000);
+        Console.WriteLine("Informe o valor que deseja inserir");
+        val = int.Parse(Console.ReadLine());
+        elemento02.aluno.Matricula = val;
         pilha.inserir(elemento02);
         pilha.imprimir();
         string sn = "";
@@ -78,7 +83,6 @@ public class Pilha
         {
             Elemento retirado = topo.proximo;
             topo.proximo = topo.proximo.proximo;
-            Console.WriteLine("Elemento retirado:{0}", retirado.aluno.Matricula);
         }
     }
     public void imprimir()

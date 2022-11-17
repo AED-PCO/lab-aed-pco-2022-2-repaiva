@@ -6,12 +6,17 @@
         Elemento elemento = new Elemento();
         Elemento elemento01 = new Elemento();
         Elemento elemento02 = new Elemento();
-        Random aux = new Random();
-        elemento.aluno.Matricula = aux.Next(1000);
+        Console.WriteLine("Informe o valor que deseja inserir");
+        int val = int.Parse(Console.ReadLine());
+        elemento.aluno.Matricula = val;
         fila.inserir(elemento);
-        elemento01.aluno.Matricula = aux.Next(1000);
+        Console.WriteLine("Informe o valor que deseja inserir");
+        val = int.Parse(Console.ReadLine());
+        elemento01.aluno.Matricula = val;
         fila.inserir(elemento01);
-        elemento02.aluno.Matricula = aux.Next(1000);
+        Console.WriteLine("Informe o valor que deseja inserir");
+        val = int.Parse(Console.ReadLine());
+        elemento02.aluno.Matricula = val;
         fila.inserir(elemento02);
         fila.imprimir();
         string sn = "";
@@ -82,10 +87,8 @@ public class Fila
         if (confereSeVazia())
             Console.WriteLine("A fila está vazia");        
         else
-        {
-            Console.WriteLine("Elemento retirado: {0}", primeiro.proximo.aluno.Matricula);
             primeiro.proximo = primeiro.proximo.proximo;
-        }
+        
     }
     public void imprimir() 
     {

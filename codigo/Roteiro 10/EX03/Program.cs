@@ -2,29 +2,29 @@
 {
     private static void Main(string[] args)
     {
-        int val;
         Lista lista = new Lista();
         Elemento elemento = new Elemento();
         Elemento elemento01 = new Elemento();
         Elemento elemento02 = new Elemento();
-        Elemento elemento03 = new Elemento();
-        Elemento elementoainserir = new Elemento();
-        Random aux = new Random();
-        elemento.aluno.Matricula = aux.Next(1000);
-        lista.inserir(elemento);
-        elemento01.aluno.Matricula = aux.Next(1000);
-        lista.inserir(elemento01);
-        elemento02.aluno.Matricula = aux.Next(1000);
-        lista.inserir(elemento02);
-        elemento03.aluno.Matricula = aux.Next(1000);
-        lista.inserir(elemento03);
-        lista.imprimir();
+
         Console.WriteLine("Informe a posição que deseja inserir");
         int pos = int.Parse(Console.ReadLine());
         Console.WriteLine("Informe o valor que deseja inserir");
+        int val = int.Parse(Console.ReadLine());
+        elemento.aluno.Matricula = val;
+        lista.inserir(elemento, pos);
+        Console.WriteLine("Informe a posição que deseja inserir");
+        pos = int.Parse(Console.ReadLine());
+        Console.WriteLine("Informe o valor que deseja inserir");
         val = int.Parse(Console.ReadLine());
-        elementoainserir.aluno.Matricula = val;
-        lista.inserir(elementoainserir, pos);
+        elemento01.aluno.Matricula = val;
+        lista.inserir(elemento01, pos);
+        Console.WriteLine("Informe a posição que deseja inserir");
+        pos = int.Parse(Console.ReadLine());
+        Console.WriteLine("Informe o valor que deseja inserir");
+        val = int.Parse(Console.ReadLine());
+        elemento02.aluno.Matricula = val;
+        lista.inserir(elemento02, pos);
         lista.imprimir();
         string sn = "";
         do
@@ -80,9 +80,9 @@ public class Lista
         else
             return false;
     }
-    public void inserir(Elemento novo, int pos = -1)
+    public void inserir(Elemento novo, int pos)
     {
-        int cont = 1;
+        int cont = 0;
         if (confereSeVazia())
         {
             primeiro.proximo = novo;
@@ -90,23 +90,14 @@ public class Lista
         }
         else
         {
-            if (pos == -1)
-                {
-                    ultimo.proximo = novo;
-                    ultimo = novo;
-                }
-            else
+            Elemento aux = primeiro;
+            while (cont < pos && aux.proximo != null)
             {
-                Elemento aux = primeiro;
-                Elemento auxRet;
-                while (cont < pos && aux.proximo != null)
-                {
-                    cont++;
-                    aux = aux.proximo;
-                }
-                novo.proximo = aux.proximo;
-                aux.proximo = novo;
+                cont++;
+                aux = aux.proximo;
             }
+            novo.proximo = aux.proximo;
+            aux.proximo = novo; 
         }
     }
     public void retirar(int val)
@@ -115,26 +106,18 @@ public class Lista
             Console.WriteLine("A Lista está vazia");
         else
         {
+            int flag = 0;
             Elemento aux = primeiro;
-            Elemento auxRet;
-            bool procura = false;
-            while (aux.proximo != null)
+            while (aux.proximo != null && flag != -1)
             {
                 if (aux.proximo.aluno.Matricula == val)
                 {
-                    procura = true;
-                    break;
-                }                    
-                aux = aux.proximo;
+                    aux.proximo = aux.proximo.proximo;
+                    flag = -1;
+                }
+                else               
+                    aux = aux.proximo;    
             }
-            if(procura)
-            {
-                auxRet = aux.proximo;
-                aux.proximo = auxRet.proximo;
-                Console.WriteLine("Elemento retirado: {0}", auxRet.aluno.Matricula);
-            }
-            else
-                Console.WriteLine("Elemento não encontrado na lista!");
         }
     }
     public void imprimir()
