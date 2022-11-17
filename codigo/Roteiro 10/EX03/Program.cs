@@ -70,7 +70,8 @@ public class Lista
         ultimo = new Elemento();
         primeiro.aluno = null;
         primeiro.proximo = null;
-        ultimo = this.primeiro;
+        ultimo.aluno = null;
+        ultimo.proximo = null;
     }
     public bool confereSeVazia()
     {
@@ -116,17 +117,17 @@ public class Lista
         {
             Elemento aux = primeiro;
             Elemento auxRet;
-            bool achou = false;
+            bool procura = false;
             while (aux.proximo != null)
             {
                 if (aux.proximo.aluno.Matricula == val)
                 {
-                    achou = true;
+                    procura = true;
                     break;
                 }                    
                 aux = aux.proximo;
             }
-            if (achou)
+            if(procura)
             {
                 auxRet = aux.proximo;
                 aux.proximo = auxRet.proximo;
