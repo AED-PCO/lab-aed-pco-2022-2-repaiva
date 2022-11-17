@@ -1,97 +1,95 @@
-﻿using classesPilha;
-internal class Program
+﻿internal class Program
 {
     private static void Main(string[] args)
     {
-            Pilha pilha = new Pilha();
-            Elemento elemento = new Elemento();
-            Elemento elemento01 = new Elemento();
-            Elemento elemento02 = new Elemento();
-            Random aux = new Random();
-            elemento.aluno.matricula = aux.Next(1000);
-            pilha.inserir(elemento);
-            elemento01.aluno.matricula = aux.Next(1000);
-            pilha.inserir(elemento01);
-            elemento02.aluno.matricula = aux.Next(1000);
-            pilha.inserir(elemento02);
-            pilha.imprimir();
-            string sn = "";
-            do
-            {
-                Console.WriteLine("Deseja retirar algum valor? S/N");
-                sn = Console.ReadLine();
-                if(sn == "S" || sn == "s")
-                    pilha.retirar();
-            }while(sn == "S" || sn == "s");
-            pilha.imprimir();
+        Pilha pilha = new Pilha();
+        Elemento elemento = new Elemento();
+        Elemento elemento01 = new Elemento();
+        Elemento elemento02 = new Elemento();
+        Random aux = new Random();
+        elemento.aluno.Matricula = aux.Next(1000);
+        pilha.inserir(elemento);
+        elemento01.aluno.Matricula = aux.Next(1000);
+        pilha.inserir(elemento01);
+        elemento02.aluno.Matricula = aux.Next(1000);
+        pilha.inserir(elemento02);
+        pilha.imprimir();
+        string sn = "";
+        do
+        {
+            Console.WriteLine("Deseja retirar algum valor? S/N");
+            sn = Console.ReadLine();
+            if(sn == "S" || sn == "s")
+                pilha.retirar();
+        }while(sn == "S" || sn == "s");
+        pilha.imprimir();
     }
 }
-
-namespace classesPilha
+public class Aluno
 {
-    public class Aluno
+    private int matricula;
+    public int Matricula 
     {
-        public int matricula {get; set;}
-        public Aluno(){}
+        get{return matricula;}
+        set{matricula = value;}
     }
-    public class Elemento
+}
+public class Elemento
+{
+    public Aluno aluno;
+    public Elemento proximo;
+    public Elemento()
     {
-        public Aluno aluno;
-        public Elemento proximo;
-
-        public Elemento()
+        this.aluno = new Aluno();
+        this.proximo = null;
+    }
+}
+public class Pilha
+{
+    public Elemento topo;
+    public Pilha()
+    {
+        topo = new Elemento();
+        topo.aluno = null;
+        topo.proximo = null;
+    }
+    public bool confereSeVazia()
+    {
+        if(topo.proximo == null)
+            return true;
+        else
+            return false;
+    }
+    public void inserir(Elemento novo) 
+    {
+        if (confereSeVazia())
+            topo.proximo = novo;
+        else
         {
-            this.aluno = new Aluno();
-            this.proximo = null;
+            novo.proximo = topo.proximo;
+            topo.proximo = novo;
         }
     }
-    public class Pilha
+    public void retirar()
     {
-        public Elemento primeiro;
-        public Pilha()
+        if (confereSeVazia())
+            Console.WriteLine("A pilha está vazia");
+        else
         {
-            primeiro = new Elemento();
-            primeiro.aluno = null;
-            primeiro.proximo = null;
+            Elemento retirado = topo.proximo;
+            topo.proximo = topo.proximo.proximo;
+            Console.WriteLine("Elemento retirado:{0}", retirado.aluno.Matricula);
         }
-        public bool confereSeVazia()
+    }
+    public void imprimir()
+    {
+        Elemento elemento = topo.proximo;
+        Console.WriteLine("PILHA:");
+        while (elemento != null)
         {
-            if(primeiro.proximo == null)
-                return true;
-            else
-                return false;
+            Console.Write(elemento.aluno.Matricula+"\t");
+            elemento = elemento.proximo;
         }
-        public void inserir(Elemento novo)
-        {
-            if (confereSeVazia())
-                primeiro.proximo = novo;
-            else
-            {
-                novo.proximo = primeiro.proximo;
-                primeiro.proximo = novo;
-            }
-        }
-        public void retirar()
-        {
-            if (confereSeVazia())
-                Console.WriteLine("A pilha está vazia");
-            else
-            {
-                Console.WriteLine("Elemento retirado: {0}", primeiro.proximo.aluno.matricula);
-                primeiro.proximo = primeiro.proximo.proximo;
-            }
-        }
-        public void imprimir()
-        {
-            Elemento dado = primeiro.proximo;
-
-            Console.WriteLine("PILHA:");
-            while (dado != null)
-            {
-                Console.Write(dado.aluno.matricula+"\t");
-                dado = dado.proximo;
-            }
-            Console.WriteLine();
-        }
+        Console.WriteLine();
     }
 }
