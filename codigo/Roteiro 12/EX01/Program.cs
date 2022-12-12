@@ -32,7 +32,8 @@ namespace arvore{
     }
 
     class metodosComuns{
-        public static string emOrdem(ref no raiz){
+        public static string emOrdem(ref no raiz)
+        {
             string resultado;
             if(raiz.filhoEsquerda == null)
                 resultado = raiz.registro + "$";
@@ -42,7 +43,7 @@ namespace arvore{
         
             if(raiz.filhoDireita != null)
                 resultado += emOrdem(ref raiz.filhoDireita) + "$";
-                
+            
             return resultado;
         }
     }
@@ -53,20 +54,19 @@ namespace arvore{
             novo.registro = reg;
 
             if(raiz.registro < novo.registro){
-                if(raiz.filhoEsquerda == null){
+                if(raiz.filhoEsquerda == null)
                     raiz.filhoEsquerda = novo;
-                }
-                else{
+                
+                else
                     inserir(ref raiz.filhoEsquerda, reg);
-                }
+                
             }
             else{
-                if(raiz.filhoDireita == null){
+                if(raiz.filhoDireita == null)
                     raiz.filhoDireita = novo;
-                }
-                else{
+                
+                else
                     inserir(ref raiz.filhoDireita, reg);
-                }
             }
         }
     }
